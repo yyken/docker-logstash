@@ -25,7 +25,7 @@ Vagrant.configure('2') do |config|
   config.vm.network :private_network, ip: MACHINE_IP
   config.vm.network :forwarded_port, guest: 9292, host: 9292
 
-  config.vm.synced_folder './', '/vagrant'
+  config.vm.synced_folder '.', '/vagrant'
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']

@@ -17,7 +17,7 @@ See below for a complate example using `Vagrant`.
 
 ### First, prepare your Logstash configuration file
 
-The logstash configuration file used in this container is downloaded from the internet using `wget`. The configuration file location is determined by the value of the `LOGSTASH_CONFIG_FILE` environment variable, which is set using the `-e` flag when executing `docker run`.
+The logstash configuration file used in this container is downloaded from the internet using `curl`. The configuration file location is determined by the value of the `LOGSTASH_CONFIG_FILE` environment variable, which is set using the `-e` flag when executing `docker run`.
 
 Unless `LOGSTASH_CONFIG_FILE` is overridden, an [example configuration file][2] for an embedded Elasticsearch will be downloaded, moved to `/opt/logstash.conf`, and used in your container.
 

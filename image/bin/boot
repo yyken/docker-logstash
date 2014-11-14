@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Fail fast, including pipelines
+set -e -o pipefail
+
+# Set LOGSTASH_TRACE to enable debugging
+[[ $LOGSTASH_TRACE ]] && set -x
+
+SCRIPT_ROOT=$(readlink -f $(dirname "$0")/..)
+
+. "${SCRIPT_ROOT}/logstash.sh"
+
+main() {
+    start_agent
+}
+
+main "$@"

@@ -16,6 +16,7 @@ RUN apt-get update \
        git \
        openjdk-7-jre-headless="$JAVA_VERSION"* \
        --no-install-recommends \
+    && rm -rf /var/cache/apt/* \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/logstash \

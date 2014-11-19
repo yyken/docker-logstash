@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Fail fast, including pipelines
 set -e -o pipefail

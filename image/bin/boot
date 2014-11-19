@@ -8,7 +8,7 @@ set -e -o pipefail
 
 SCRIPT_ROOT=$(readlink -f $(dirname "$0")/..)
 
-. "${SCRIPT_ROOT}/logstash.sh"
+source "${SCRIPT_ROOT}/logstash.sh"
 
 main() {
     start_agent

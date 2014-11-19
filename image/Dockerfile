@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER P. Barrett Little <barrett@barrettlittle.com>
+MAINTAINER P. Barrett Little <barrett@barrettlittle.com> (@pblittle)
 
 ENV LOGSTASH_VERSION 1.4.2
 ENV LOGSTASH_SOURCE_URL https://download.elasticsearch.org/logstash/logstash/logstash-$LOGSTASH_VERSION.tar.gz

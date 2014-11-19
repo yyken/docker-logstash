@@ -6,7 +6,7 @@ VERSION = 0.9.0
 #
 # Override default: `make LOGSTASH_CONFIG_URL=<your_config_url> ... run`
 #
-LOGSTASH_CONFIG_URL := https://gist.github.com/pblittle/8778567/raw/logstash.conf
+LOGSTASH_CONFIG_URL := https://gist.githubusercontent.com/pblittle/8778567/raw/logstash.conf
 
 # This default host and port are for using the embedded elasticsearch
 # in LogStash.
@@ -32,8 +32,8 @@ KIBANA_PORT := 9292
 #
 # Override default: `make LF_SSL_CERT_KEY_URL=<your_key_url> LF_SSL_CERT_URL=<your_cert_url> ... run`
 #
-LF_SSL_CERT_KEY_URL := https://gist.github.com/pblittle/8994708/raw/insecure-logstash-forwarder.key
-LF_SSL_CERT_URL := https://gist.github.com/pblittle/8994726/raw/insecure-logstash-forwarder.crt
+LF_SSL_CERT_KEY_URL := https://gist.githubusercontent.com/pblittle/8994708/raw/insecure-logstash-forwarder.key
+LF_SSL_CERT_URL := https://gist.githubusercontent.com/pblittle/8994726/raw/insecure-logstash-forwarder.crt
 
 docker_link_flag =
 ifdef ES_CONTAINER

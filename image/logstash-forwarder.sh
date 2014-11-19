@@ -21,7 +21,7 @@ create_ssl_directory() {
 }
 
 LF_SSL_CERT_FILE="${SSL_CERT_PATH}/logstash-forwarder.crt"
-LF_SSL_CERT_URL=${LF_SSL_CERT_URL:-'https://gist.github.com/pblittle/8994726/raw/insecure-logstash-forwarder.crt'}
+LF_SSL_CERT_URL=${LF_SSL_CERT_URL:-'https://gist.githubusercontent.com/pblittle/8994726/raw/insecure-logstash-forwarder.crt'}
 
 download_cert() {
     echo 'Downloading logstash forwarder ssl certificate ...'
@@ -32,7 +32,7 @@ download_cert() {
 }
 
 LF_SSL_CERT_KEY_FILE="${SSL_CERT_PATH}/logstash-forwarder.key"
-LF_SSL_CERT_KEY_URL=${LF_SSL_CERT_KEY_URL:-'https://gist.github.com/pblittle/8994708/raw/insecure-logstash-forwarder.key'}
+LF_SSL_CERT_KEY_URL=${LF_SSL_CERT_KEY_URL:-'https://gist.githubusercontent.com/pblittle/8994708/raw/insecure-logstash-forwarder.key'}
 
 download_key() {
     echo 'Downloading logstash forwarder ssl key ...'

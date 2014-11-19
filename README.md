@@ -128,7 +128,7 @@ Special shoutout to @ehazlett's excellent post, [Logstash and Kibana3 via Docker
 This application is distributed under the [Apache License, Version 2.0][5].
 
 [1]: https://registry.hub.docker.com/u/pblittle/docker-logstash
-[2]: https://gist.github.com/pblittle/8778567/raw/logstash.conf
+[2]: https://gist.githubusercontent.com/pblittle/8778567/raw/logstash.conf
 [3]: http://192.168.33.10:9292/index.html#/dashboard/file/logstash.json
 [4]: http://ehazlett.github.io/applications/2013/08/28/logstash-kibana/
 [5]: http://www.apache.org/licenses/LICENSE-2.0

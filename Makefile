@@ -35,7 +35,7 @@ endif
 
 .PHONY: build
 build:
-	docker build --rm -t $(NAME):$(VERSION) .
+	docker build --rm -t $(NAME):$(VERSION) ./1.4
 
 .PHONY: run
 run:
@@ -43,7 +43,7 @@ run:
 
 .PHONY: shell
 shell:
-	docker run -t -i --rm $(NAME):$(VERSION) /bin/bash
+	docker exec -it --rm $(NAME):$(VERSION) /bin/bash
 
 .PHONY: test
 test:
